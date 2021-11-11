@@ -1,2 +1,1 @@
-# builtbybuffalo-casestudy
-website case study
+Built by Buffalo Case Study
