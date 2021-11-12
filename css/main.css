@@ -30,8 +30,12 @@ input{
 }
 
 blockquote {
-  font-size: 30px;
-  
+  font-size: 28px;
+  line-height: 36px;
+  word-spacing: 1px;
+  text-align: center;
+  max-width: 960px;
+  quotes: none;
 }
 
 .work-featured-uxlink{
