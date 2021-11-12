@@ -10,8 +10,59 @@ body{
   font-family: freight-sans-pro-lights;
   color: var(--dark-gray);
   line-height: 1.4em;
+  background-color: var(--off-white);
 }
 
 a{
   color: var(--dark-gray);
+  text-decoration: underline;
+  cursor: auto;
+}
+
+a:hover{
+  color: var(--blue);
+}
+
+input{
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+blockquote {
+  font-size: 30px;
+  
+}
+
+.work-featured-uxlink{
+  text-decoration: none;
+  color: var(--orange);
+}
+
+.data-list__paragraph{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 1.2em;
+}
+
+.work-featured-paragraph{
+  max-width: 291px;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  background-color: #BEBEBE;
+  color: white;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #33cccc;
+  color: white;
+  cursor: pointer;
 }
