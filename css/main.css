@@ -289,8 +289,17 @@ input {
 .icon {
   font-size: 100px;
   color: var(--orange);
+  text-decoration: none;
   /*border-bottom: 0;*/
 }  /*---------------------Problem is HERE? not sure how to get rid of the blue line, but it comes from the border-bottom-style still being active on the <i> ---------------------------------- */
+
+* > .hover-show,
+*:hover > .hover-hidden {
+  display: none;
+}
+*:hover > .hover-show {
+  display: inline-block;
+}
 
 .fa-shopify {
   font-size: 32px;
@@ -299,12 +308,13 @@ input {
 .fa-mailchimp{
   font-size: 35px;
 }
-/*Wondering if subtituing for these icons is okay*/
+/*----Wondering if substituting for these icons is okay?----*/
 
 /*.icon:hover {
   display:none;
   cursor: pointer;
 }
+
 
 /*---------------------------------Footer Subsection-------------------*/
 
