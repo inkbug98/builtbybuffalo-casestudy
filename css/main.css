@@ -290,7 +290,7 @@ input {
   font-size: 100px;
   color: var(--orange);
   /*border-bottom: 0;*/
-}   /*---------------------Problem is HERE not sure how to get rid of the border line, but it comes from the border-bottom-style still being active on the <i> ---------------------------------- */
+}  /*---------------------Problem is HERE? not sure how to get rid of the blue line, but it comes from the border-bottom-style still being active on the <i> ---------------------------------- */
 
 .fa-shopify {
   font-size: 32px;
@@ -299,31 +299,14 @@ input {
 .fa-mailchimp{
   font-size: 35px;
 }
+/*Wondering if subtituing for these icons is okay*/
 
 /*.icon:hover {
   display:none;
   cursor: pointer;
 }
----------I can't figure out how to get this to transition to being full like it is in the origioanl icon, also not sure if I'll be able to use the origional icon, so wondering if subtituting thigns like that is okay---------*/
 
-
-/*---------------------------------Flex Box-------------------*/
-
-/*.header-flexbox {
-
-}
-
-.text-left{
-  border-color: var(--black);
-  min-width: 87px ;
-  /*display: block;
-
-}
-
-.text-right{
-  border-color: var(--black);
-
-} */
+/*---------------------------------Footer Subsection-------------------*/
 
 .footer-subsection{
   text-align: center;
