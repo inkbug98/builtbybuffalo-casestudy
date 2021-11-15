@@ -72,38 +72,7 @@ body{
   /*text-align: center;*/
 }
 
-a{
-  border-bottom-style: solid;
-  border-bottom-width: thin;
-  border-color:inherit;
-  text-decoration: none;
-  border-color: var(--blue);
-  color: var(--dark-gray);
-  cursor: auto;*/
-
-}
-
-a:hover{
-  color: var(--blue);
-}
-
-input{
-  border: none;
-  padding: 10px 10px;
-  border-radius: 5px;
-  margin-top: 1em;
-}
-
-blockquote {
-  font-size: 28px;
-  line-height: 36px;
-  word-spacing: 1px;
-  text-align: center;
-  max-width: 960px;
-  quotes: none;
-}
-
-/*<-------------------Headings-------------------->*/
+/*<--------------------------------Headings-------------------->*/
 
 h1 {
   font-family: forma-djr-micro, sans-serif;
@@ -161,22 +130,6 @@ h4{
   text-transform: uppercase;
 }
 
-p{
-  margin-top: 1em;
-}
-
-img {
-  display: block;
-}
-.component__img {
-  border: 1px solid gray;
-}
-
-.component__code {
-  border: 1px solid gray;
-
-}
-
 .main__h1{
 font-size: 84px;
 line-height:90px;
@@ -184,10 +137,27 @@ text-align:center;
 
 }
 
-.work-featured-uxlink{
-  text-decoration: none;
-  color: var(--orange);
-} 
+.footer-about__card--title {
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  margin-top: 5px;
+  line-height: 22px
+}
+
+/*<----------------------------General Text-----------*/
+p{
+  margin-top: 1em;
+}
+
+blockquote {
+  font-size: 28px;
+  line-height: 36px;
+  word-spacing: 1px;
+  text-align: center;
+  max-width: 960px;
+  quotes: none;
+}
 
 .data-list__paragraph{
   text-transform: uppercase;
@@ -200,49 +170,46 @@ text-align:center;
   max-width: 291px;
 }
 
-.footer-about__card{
-  display:inline-block;
-
-}
-
-div.footer-about__card {
-  max-width: 260px;
-  background: #F5F5F5;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-.display_inline_block{
-  display: inline-block;
-}
-
-.icon {
-  font-size: 100px;
-  color: var(--orange);
-  /*border-bottom: 0;
-  ---------------------Problem is HERE not sure how to get rid of the border line, but it comes from the border-bottom-style still being active on the <i>---------------------------------- */
-}
-
-.footer-about__card--title {
-  font-size: 20px;
-  letter-spacing: 3px;
-  font-weight: 300;
-  margin-top: 5px;
-  line-height: 22px
-}
-
 .footer-about__card--text{
   color: #888888;
   margin: 10px;
   line-height: 1.5em;
 }
+/*<----------------------------Images------------------*/
 
-.footer-about__card--button {
-  text-decoration: none;
+img {
+  display: block;
 }
 
-.footer-about__card--button:hover{
-  color: var(--dark-grey);
+.component__img {
+  border: 1px solid gray;
+}
+
+
+/*<---------------------------Links------------------>*/
+a{
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-color:inherit;
+  text-decoration: none;
+  border-color: var(--blue);
+  color: var(--black);
+  cursor: auto;*/
+
+}
+
+a:hover{
+  color: var(--blue);
+}
+
+
+/*<-------------------------Button/Forms--------------->*/
+
+input{
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-top: 1em;
 }
 
 .button {
@@ -264,7 +231,89 @@ div.footer-about__card {
   cursor: pointer;
 }
 
+.footer-about__card--button {
+  text-decoration: none;
+}
+
+.footer-about__card--button:hover{
+  color: var(--dark-grey);
+}
+
+.newsletter button {
+  position: absolute;
+  vertical-align: middle;
+  padding: 0 6px 0 7px;
+  background: 0 0;
+  color: var(--dark-gray);
+  font-size: 17px;
+  /*border: none;*/
+}
+
+/*-----------------------------------Icons---------------------*/
+
+.icon {
+  font-size: 100px;
+  color: var(--orange);
+  /*border-bottom: 0;*/
+}   /*---------------------Problem is HERE not sure how to get rid of the border line, but it comes from the border-bottom-style still being active on the <i> ---------------------------------- */
+
+.fa-shopify {
+  font-size: 32px;
+
+}
+
+.fa-mailchimp{
+  font-size: 35px;
+}
+
 /*.icon:hover {
   display:none;
   cursor: pointer;
-}*/
+}
+---------I can't figure out how to get this to transition to being full like it is in the origioanl icon, also not sure if I'll be able to use the origional icon, so wondering if subtituting thigns like that is okay---------*/
+
+
+/*---------------------------------Flex Box-------------------*/
+
+.footer-subsection__flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-subsection__flexbox a {
+  border-bottom-style: none;
+  color: var(--dark-gray);
+  font-size: 30px;
+}
+
+.footer-subsection__flexbox a:hover {
+  color: var(--black);
+}
+
+/*------------------------------------misc----------------------*/
+
+.component__code {
+  border: 1px solid gray;
+
+}
+.work-featured-uxlink{
+  text-decoration: none;
+  color: var(--orange);
+}
+
+.display_inline_block{
+  display: inline-block;
+}
+
+.footer-about__card{
+  display:inline-block;
+
+}
+
+div.footer-about__card {
+  max-width: 260px;
+  background: #F5F5F5;
+  text-align: center;
+  padding-bottom: 50px;
+}
