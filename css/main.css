@@ -72,6 +72,36 @@ body{
   /*text-align: center;*/
 }
 
+/*------------Header Nav------------------*/
+
+
+.header-bar p{
+  display: inline-block;
+  vertical-align: middle;
+  width: 108px;
+  text-transform: uppercase;
+  margin: 0 10px;
+  letter-spacing: 3px;
+}
+
+.header-bar a{
+  padding-bottom: 5px;
+  display: block;
+  border-color: var(--black);
+}
+
+.header-bar a:hover{
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
 /*<--------------------------------Headings-------------------->*/
 
 h1 {
@@ -273,16 +303,6 @@ input {
 .footer-about__card--button:hover{
   color: var(--dark-grey);
 }
-
-/*.newsletter button {
-  position: absolute;
-  vertical-align: middle;
-  padding: 0 6px 0 7px;
-  background: 0 0;
-  color: var(--dark-gray);
-  font-size: 17px;
-  /*border: none;
-}*/
 
 /*-----------------------------------Icons/Logos---------------------*/
 
