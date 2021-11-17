@@ -207,6 +207,40 @@ blockquote {
   margin: 10px;
   line-height: 1.5em;
 }
+
+/*---------Hexagons----------*/
+
+.hexagon-box{
+  display: inline-block;
+}
+.hexagon {
+  background: url("../components/img/main/work-featured__item-background.png");
+  background-size: 190px;
+  width: 190px;
+  height: 210px;
+  position: relative;
+  display: inline-block;
+  border-bottom: none;
+  overflow: hidden;
+}
+
+.hexagon span{
+  position: absolute;
+  display: block;
+  border-left: 95px solid var(--off-white);
+  border-right: 95px solid var(--off-white);
+}
+
+.hex1 {
+  top 0;
+  border-bottom: 47px solid transparent;
+}
+
+.hex2 {
+  bottom: 0;
+  border-top: 47px solid transparent;
+}
+
 /*<----------------------------Images------------------*/
 
 img {
