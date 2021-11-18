@@ -237,6 +237,14 @@ blockquote {
   max-width: 291px;
 }
 
+.work-featured-paragraph p{
+  text-align: left;
+}
+
+.work-featured-paragraph a{
+  border-bottom: none;
+}
+
 .footer-about__card--text{
   color: #888888;
   margin: 10px;
