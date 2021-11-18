@@ -72,7 +72,7 @@ body{
   /*text-align: center;*/
 }
 
-/*------------Header Nav------------------*/
+/*------------------------Header Nav---------------------*/
 
 
 .header-bar p{
@@ -102,14 +102,36 @@ body{
 .text-right{
   text-align: right;
 }
-/*<--------------------------------Headings-------------------->*/
 
+.logo a {
+  border-bottom: none;
+}
+
+/*<------------------------------Headings-------------------->*/
+
+h1,h2,h3,h4{
+  text-align: center;
+}
+
+h2,h3, h4,text {
+  text-transform: uppercase;
+}
 h1 {
   font-family: forma-djr-micro, sans-serif;
   font-weight: 700;
   color: var(--black);
   letter-spacing:-.6px;
   word-spacing: 4px;
+}
+
+text {
+  font-size: 34px;
+  font-family: forma-djr-micro, sans-serif;
+  color: var(--black);
+  font-weight: 700;
+  margin: 0;
+  height: 120px;
+  line-height: 120px;
 }
 
 .work-featured__h1 {
@@ -127,7 +149,6 @@ h2{
   font-size: 24px;
   word-spacing:1px;
   line-height: 30px;
-  text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 300;
   color: var(--black);
@@ -149,7 +170,6 @@ h3 {
   word-spacing:1px;
   line-height:22px;
   padding-top: 1em;
-  text-transform: uppercase;
   font-weight: 300;
   color: var(--black);
 }
@@ -158,7 +178,6 @@ h4{
   font-size: 14px;
   font-weight: 400;
   letter-spacing:.15em;
-  text-transform: uppercase;
 }
 
 .main__h1{
@@ -176,7 +195,23 @@ text-align:center;
   line-height: 22px
 }
 
-/*<----------------------------General Text-----------*/
+/*<------------------------Page Breaks------------------------*/
+
+hr {
+  height: 1px;
+  background-color: var(--off-white);
+  color: var(--dark-gray);
+}
+.page-break1 {
+  /*float: none;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+}
+
+
+/*<-------------------------General Text--------------------*/
 p{
   margin-top: 1em;
   text-align: center;
@@ -208,11 +243,50 @@ blockquote {
   line-height: 1.5em;
 }
 
-/*---------Hexagons----------*/
+
+/*------------------------Lists---------------------*/
+
+ul{
+    display: block;
+    list-style: none;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+.data-list li {
+  margin-right: 14px;
+  margin-left: 14px;
+}
+
+.data-list {
+  text-align: center;
+}
+
+/*--------------------------Hexagons------------------------*/
+
+.workfeatured-hexagons-list div.hexagon-box {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 37px;
+  margin-bottom: 37px;
+  float: none;
+  position: relative;
+  z-index: 10;
+}
 
 .hexagon-box{
   display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
 .hexagon {
   background: url("../components/img/main/work-featured__item-background.png");
   background-size: 190px;
@@ -245,6 +319,7 @@ blockquote {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .component__img {
@@ -332,6 +407,7 @@ input {
 
 .footer-about__card--button {
   text-decoration: none;
+  border-bottom-style: none;
 }
 
 .footer-about__card--button:hover{
@@ -344,8 +420,8 @@ input {
   font-size: 100px;
   color: var(--orange);
   text-decoration: none;
-  /*border-bottom: 0;*/
-}  /*---------------------Problem is HERE? not sure how to get rid of the blue line, but it comes from the border-bottom-style still being active on the <i> ---------------------------------- */
+  border-bottom-style: none;
+}
 
 * > .hover-show,
 *:hover > .hover-hidden {
@@ -361,6 +437,12 @@ input {
 
 .fa-mailchimp{
   font-size: 35px;
+}
+
+.logo {
+  display: block;
+  height: auto;
+  border-bottom: none;
 }
 /*----Wondering if substituting for these icons is okay?----*/
 
