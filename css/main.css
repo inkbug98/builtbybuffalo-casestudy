@@ -293,6 +293,11 @@ li {
   text-align: center;
 }
 
+.blockquote-section {
+  text-align: center;
+  position: relative;
+}
+
 /*--------------------------Hexagons------------------------*/
 
 .workfeatured-hexagons-list div.hexagon-box {
@@ -517,3 +522,9 @@ input {
   text-align: center;
   padding-bottom: 50px;
 }
+
+.display-block{
+  display: block;
+}
+
+/*-----------Block Quote Section---------------*/
