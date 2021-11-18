@@ -203,7 +203,6 @@ hr {
   color: var(--dark-gray);
 }
 .page-break1 {
-  /*float: none;*/
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -212,6 +211,23 @@ hr {
 
 
 /*<-------------------------General Text--------------------*/
+cite {
+  font-weight: 400;
+  display: block;
+  margin-top: 1em;
+  font-style: normal;
+  text-align: center;
+}
+
+.h5 {
+  font-size: 12px;
+  word-spacing: 1px;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 1em;
+}
+
 p{
   margin-top: 1em;
   text-align: center;
@@ -452,7 +468,6 @@ input {
   height: auto;
   border-bottom: none;
 }
-/*----Wondering if substituting for these icons is okay?----*/
 
 /*---------------------------------Footer Subsection-------------------*/
 
