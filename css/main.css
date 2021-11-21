@@ -299,50 +299,85 @@ li {
 }
 
 /*--------------------------Hexagons------------------------*/
-
-.workfeatured-hexagons-list div.hexagon-box {
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: 37px;
-  margin-bottom: 37px;
-  float: none;
-  position: relative;
-  z-index: 10;
+.hex-flex-box {
+  display: flex;
+  size: 190px;
+  max-width: 1000px;
+  /*margin: 4px;*/
 }
 
-.hexagon-box{
+.workfeatured-hexagon-list::before {
+  content: "";
+  width: 97px;
+  float: left;
+  height: 100%;
+  shape-outside: repeating-linear-gradient(#0000 0 280px, #000 0 285px);
+}
+
+.workfeatured-hexagon-list{
+  font-size: 0;
+}
+
+.workfeatured-hexagon-list div{
+  width: 190px;
+  /*margin: 4px;*/
+  height: 190 * 1.1547);
   display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
+  clip-path: polygon(6% 25%, 6% 75%, 50% 94%, 92% 75%, 92% 25%, 50% 6%);
+  margin-bottom: -54px;
+
 }
 
 .hexagon {
-  background: url("../components/img/main/work-featured__item-background.png");
-  background-size: 190px;
-  width: 190px;
-  height: 210px;
-  position: relative;
-  display: inline-block;
+  float: left;
+}
+
+.workfeatured-hexagon-list a{
   border-bottom: none;
-  overflow: hidden;
+  max-width: 995px;
 }
 
-.hexagon span{
-  position: absolute;
-  display: block;
-  border-left: 95px solid var(--off-white);
-  border-right: 95px solid var(--off-white);
+@media screen and (max-width: 992px) {
+  .hex-flex-box{
+    max-width: 775px;
+  }
 }
 
-.hex1 {
-  top 0;
-  border-bottom: 47px solid transparent;
+@media screen and (max-width: 804px) {
+  .workfeatured-hexagon-list::before {
+  shape-outside: none;
+}
+}
+/*
+@media screen and (max-width: 995px) {
+  .hex-flex-box {
+  display: grid;
+  grid-template-columns:
+  minmax(244px, 1fr) minmax(244px, 1fr);
+  grid-template-rows:
+  minmax(266px,1fr)
+  minmax(266px,1fr)
+  minmax(266px,1fr)
+  minmax(266px,1fr)
+  minmax(266px,1fr)
+  minmax(266px,1fr)
+  minmax(266px,1fr);
+
+
+}
 }
 
-.hex2 {
-  bottom: 0;
-  border-top: 47px solid transparent;
+@media screen and (max-width: 995px) {
+  .workfeatured-hexagon-list div {
+  float: none;
+  clip-path: none;
+  max-width: 356px;
 }
+}*/
+
+}
+
+
 
 /*<----------------------------Images------------------*/
 
