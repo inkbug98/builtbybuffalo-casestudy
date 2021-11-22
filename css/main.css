@@ -73,6 +73,43 @@ body{
   /*text-align: center;*/
 }
 
+/*-----------------Side Bar---------------------*/
+
+.side-nav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--light-gray);
+  padding-top: 20px;
+  padding: 10px;
+}
+
+.side-nav a{
+  border-bottom: none;
+}
+
+ .all{
+    margin-left: 210px;
+}
+
+.nav-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.nav{
+  margin-top: 25px;
+}
+
+nav ul{
+  padding-left: 20px;
+}
+
 /*------------------------Header Nav---------------------*/
 
 
@@ -393,11 +430,14 @@ img {
   max-width: 100%;
 }
 
-.component__img {
+article .component__img {
   border: 1px solid gray;
+  display: block;
 }
 
-
+ .component__img {
+ display: block;
+}
 /*<---------------------------Links------------------>*/
 
 a {

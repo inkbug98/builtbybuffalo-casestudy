@@ -12,9 +12,18 @@
 
   <body>
 
-      <nav>
+      <nav class="side-nav">
 
-        <a>Typography Defaults</a>
+        <div>
+          <img
+          srcset="img/header/logo-plain@2x.png 2x"
+          src="img/header/logo-plain@2x.png"
+          alt="header logo"
+          class="nav-logo"/>
+        </div>
+
+        <div class="nav">
+        <a href="#type">Typography Defaults</a>
           <ul>
             <li>Citation</li>
             <li>Paragraph</li>
@@ -25,10 +34,10 @@
             <li>H4</li>
           </ul>
 
-        <a>Atoms</a>
+        <a href="#atom">Atoms</a>
           <ul>
-            <li> Header Nav Item</li>
-            <li> Header Logo</li>
+            <li>Header Nav Item</li>
+            <li>Header Logo</li>
             <li>Work Featured Item</li>
             <li>Data Infograph</li>
             <li>Data List Item</li>
@@ -37,26 +46,26 @@
             <li>Footer Icon</li>
           </ul>
 
-        <a> Header</a>
+        <a href="#header"> Header</a> <br>
 
-        <a>Home Main</a>
+        <a href="#main">Home Main</a>
           <ul>
           <li>Work Featured Grid</li>
           <li>Data Section</li>
           <li>Block Quote Slideshow</li>
           </ul>
-        <a> Footer</a>
+        <a href="#foot"> Footer</a>
           <ul>
           <li>Footer About Section</li>
           <li>Footer Subsection</li>
           </ul>
-
+        </div>
       </nav>
 
-    <main>
+    <main class="all">
     <h1>Web Components</h1>
 
-    <h2> typography defaults</h2>
+    <h2 id="type"> typography defaults</h2>
 
     <article class="component">
     <h3>Citation</h3>
@@ -218,7 +227,7 @@
     </article>
   </article>
 
-    <h2>Atoms</h2>
+    <h2 id="atom">Atoms</h2>
     <article class="component">
     <h3>Header Nav Item</h3>
       <div class="component__img">
@@ -357,7 +366,7 @@
     </article>
 
     <article class="component">
-    <h2> Header</h2>
+    <h2 id="header"> Header</h2>
       <img
       srcset="img/header/header.png 2x"
       src="img/header/header.png"
@@ -387,7 +396,7 @@
       </div>
     </article>
 
-    <h2> Home Main</h2>
+    <h2 id="main"> Home Main</h2>
 
     <article class="component">
       <h3>Work Featured Grid</h3>
@@ -530,7 +539,7 @@
       </div>
     </article>
 
-    <article class="component clear">
+    <article class="component">
       <h3> Data List Item</h3>
       <img
       srcset="img/main/data-list__item.png 2x"
@@ -713,7 +722,7 @@
     </article>
 
 
-    <h2> Footer</h2>
+    <h2 id="foot"> Footer</h2>
     <article class="component">
       <h3>Footer About Section</h3>
       <img
