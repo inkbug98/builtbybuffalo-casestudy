@@ -212,6 +212,11 @@ hr {
 
 
 /*<-------------------------General Text--------------------*/
+
+.clear{
+  clear:left
+}
+
 cite {
   font-weight: 400;
   display: block;
@@ -482,6 +487,9 @@ input {
 }
 
 /*-----------------------------------Icons/Logos---------------------*/
+.logo-box{
+  height: 180px;
+}
 
 .icon {
   font-size: 100px;
@@ -507,9 +515,13 @@ input {
 }
 
 .logo {
-  display: block;
   height: auto;
   border-bottom: none;
+  padding: none;
+}
+
+.logo a{
+  padding: 0;
 }
 
 /*---------------------------------Footer Subsection-------------------*/
