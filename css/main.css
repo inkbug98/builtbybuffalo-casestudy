@@ -55,6 +55,7 @@ font-style: normal;*/
 :root {
   --black: #181818;
   --dark-gray: #6b6b6b;
+  --light-gray: #c5c5c5;
   --off-white: #f5f5f5;
   --blue: #16a6b6;
   --orange: #ee6557;
@@ -343,12 +344,18 @@ li {
   }
 }
 
+/*
+
+
+<<<<<<-----------------Need to fix the media query for hexagons to change to teo columns of square images ----------------->>>>
+
+
 @media screen and (max-width: 804px) {
   .workfeatured-hexagon-list::before {
   shape-outside: none;
 }
 }
-/*
+
 @media screen and (max-width: 995px) {
   .hex-flex-box {
   display: grid;
@@ -375,8 +382,7 @@ li {
 }
 }*/
 
-}
-
+} /*Don't know what this guy corrilates to but things get messed up when I take it out?*/
 
 
 /*<----------------------------Images------------------*/
@@ -392,6 +398,7 @@ img {
 
 
 /*<---------------------------Links------------------>*/
+
 a {
   border-bottom-style: solid;
   border-bottom-width: thin;
@@ -563,3 +570,74 @@ input {
 }
 
 /*-----------Block Quote Section---------------*/
+
+.slider-holder {
+  width: 960px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  overflow:hidden;
+}
+
+.slide-holder {
+  width: 960px;
+  height: 350px;
+  position: relative;
+}
+
+.slide {
+  width: 960px;
+  height: 360px;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+#slide-1:target ~ .slide-holder{
+  left: 0px;
+}
+
+#slide-2:target ~ .slide-holder{
+  left:-960px;
+}
+
+#slide-3:target ~ .slide-holder{
+  left:-1600px;
+}
+#slide-4:target ~ .slide-holder{
+  left:-2880px;
+}
+#slide-5:target ~ .slide-holder{
+  position: relative;
+  left:-3840px;
+}
+
+.button-holder{
+  /*position: absolute;*/
+  top: 267px;
+  position: absolute;
+  margin-left: 36%;
+  /*text-align: center;*/
+}
+
+.slider-change {
+  display: inline-block;
+  height:10px;
+  width: 50px;
+  border-radius: 5px;
+  color: var(--orange);
+}
+
+.button-holder a{
+  border-bottom: none;
+}
+
+.button-holder i{
+  font-size: 35px;
+}
+
+.slider-change .fas {
+  color: var(--light-gray);
+}
