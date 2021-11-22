@@ -302,9 +302,7 @@ li {
 /*--------------------------Hexagons------------------------*/
 .hex-flex-box {
   display: flex;
-  size: 190px;
   max-width: 1000px;
-  /*margin: 4px;*/
 }
 
 .workfeatured-hexagon-list::before {
@@ -321,12 +319,10 @@ li {
 
 .workfeatured-hexagon-list div{
   width: 190px;
-  /*margin: 4px;*/
-  height: 190 * 1.1547);
+  height: 190px;
   display: inline-block;
   clip-path: polygon(6% 25%, 6% 75%, 50% 94%, 92% 75%, 92% 25%, 50% 6%);
   margin-bottom: -54px;
-
 }
 
 .hexagon {
@@ -616,7 +612,7 @@ input {
 
 .button-holder{
   /*position: absolute;*/
-  top: 267px;
+  top: 345px;
   position: absolute;
   margin-left: 36%;
   /*text-align: center;*/
