@@ -359,7 +359,7 @@ ul{
 
 li {
   list-style: none;
-  display: inline-block;
+  display:block;
 }
 
 .data-list li {
