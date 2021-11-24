@@ -357,9 +357,13 @@ ul{
     border: 0;
 }
 
+.nav-bar li{
+    display: block;
+}
+
 li {
   list-style: none;
-  display:block;
+  display: inline-block;
 }
 
 .data-list li {
