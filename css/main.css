@@ -70,7 +70,6 @@ body{
   color: var(--dark-gray);
   line-height: 1.4em;
   background-color: var(--off-white);
-  /*text-align: center;*/
 }
 
 /*-----------------Side Bar---------------------*/
@@ -125,18 +124,6 @@ nav ul{
 
 .display_inline_block{
   display: inline-block;
-}
-
-.footer-about__card{
-  display:inline-block;
-  padding: 20px;
-}
-
-.footer-about li {
-  max-width: 260px;
-  background: #F5F5F5;
-  text-align: center;
-  padding-bottom: 50px;
 }
 
 .display-block{
@@ -210,6 +197,9 @@ blockquote {
 
 /*------------------------Header Nav---------------------*/
 
+.header-bar {
+  text-align: center;
+}
 
 .header-bar p{
   display: inline-block;
@@ -258,6 +248,10 @@ h1 {
   color: var(--black);
   letter-spacing:-.6px;
   word-spacing: 4px;
+}
+
+h2 {
+  margin: auto;
 }
 
 text {
@@ -381,9 +375,11 @@ li {
 }
 
 /*--------------------------Hexagons------------------------*/
+
 .hex-flex-box {
   display: flex;
   max-width: 1000px;
+  margin: auto;
 }
 
 .workfeatured-hexagon-list::before {
@@ -422,7 +418,6 @@ li {
 }
 
 /*
-
 
 <<<<<<-----------------Need to fix the media query for hexagons to change to teo columns of square images ----------------->>>>
 
@@ -604,7 +599,19 @@ input {
   padding: 0;
 }
 
-/*---------------------------------Footer Subsection-------------------*/
+/*---------------------------------Footer-------------------*/
+
+.footer-about__card{
+  display:inline-block;
+  padding: 20px;
+}
+
+.footer-about li {
+  max-width: 260px;
+  background: #F5F5F5;
+  text-align: center;
+  padding-bottom: 50px;
+}
 
 .footer-subsection{
   text-align: center;
@@ -656,18 +663,17 @@ input {
 }
 
 #slide-2:target ~ .slide-holder{
-  left:-960px;
+  left: -960px;
 }
 
 #slide-3:target ~ .slide-holder{
-  left:-1600px;
+  left: -1600px;
 }
 #slide-4:target ~ .slide-holder{
-  left:-2880px;
+  left: -2880px;
 }
 #slide-5:target ~ .slide-holder{
-  position: relative;
-  left:-3840px;
+  left: -3840px;
 }
 
 .button-holder{
@@ -675,6 +681,7 @@ input {
   top: 345px;
   position: absolute;
   margin-left: 36%;
+  position: none;
   /*text-align: center;*/
 }
 
