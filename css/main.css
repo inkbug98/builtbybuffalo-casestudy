@@ -331,12 +331,18 @@ hr {
   height: 1px;
   background-color: var(--off-white);
   color: var(--dark-gray);
-}
-.page-break1 {
-  display: block;
   margin-left: auto;
   margin-right: auto;
+  display: block;
+}
+
+.page-break1 {
   width: 120px;
+}
+
+.page-break2 {
+ width: 820px;
+ color:  var(--black);
 }
 
 
@@ -604,10 +610,13 @@ input {
 .footer-about__card{
   display:inline-block;
   padding: 20px;
+  border-top-style: solid;
+  border-top-width: thin;
+  border-color: var(--dark-gray);
 }
 
 .footer-about li {
-  max-width: 260px;
+  max-width: 226px;
   background: #F5F5F5;
   text-align: center;
   padding-bottom: 50px;
@@ -616,9 +625,10 @@ input {
 .footer-subsection{
   text-align: center;
 }
-.footer-subsection p{
+
+/*.footer-subsection p{
   max-width:
-}
+}*/
 
 .footer-logos a {
   border-bottom-style: none;
