@@ -70,6 +70,7 @@ body{
   color: var(--dark-gray);
   line-height: 1.4em;
   background-color: var(--off-white);
+  /*text-align: center;*/
 }
 
 /*-----------------Side Bar---------------------*/
@@ -336,6 +337,14 @@ hr {
   display: block;
 }
 
+.stats-section{
+  padding-top: 125px;
+}
+
+.blockquote-section {
+  padding-top: 75px;
+}
+
 .page-break1 {
   width: 120px;
 }
@@ -373,6 +382,7 @@ li {
 
 .data-list {
   text-align: center;
+  padding: 22px;
 }
 
 .blockquote-section {
@@ -386,11 +396,13 @@ li {
   display: flex;
   max-width: 1000px;
   margin: auto;
+  padding-top: 70px;
+  text-align: center;
 }
 
 .workfeatured-hexagon-list::before {
   content: "";
-  width: 97px;
+  width: 52px;
   float: left;
   height: 100%;
   shape-outside: repeating-linear-gradient(#0000 0 280px, #000 0 285px);
@@ -607,19 +619,25 @@ input {
 
 /*---------------------------------Footer-------------------*/
 
+.footer-about {
+  /*height: 392px;*/
+  padding-top: 75px;
+}
+
 .footer-about__card{
   display:inline-block;
-  padding: 20px;
+  height: 392px;
+  width: 226px;
+  padding: 40px 20px 60px 20px;
   border-top-style: solid;
   border-top-width: thin;
   border-color: var(--dark-gray);
 }
 
 .footer-about li {
-  max-width: 226px;
   background: #F5F5F5;
   text-align: center;
-  padding-bottom: 50px;
+  /*padding-bottom: 50px;*/
 }
 
 .footer-subsection{
@@ -687,10 +705,12 @@ input {
 }
 
 .button-holder{
-  /*position: absolute;*/
-  top: 345px;
+  top: 415px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   position: absolute;
-  margin-left: 36%;
+  margin-left: auto;
   position: none;
   /*text-align: center;*/
 }
