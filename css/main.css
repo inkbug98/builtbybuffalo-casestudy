@@ -620,15 +620,16 @@ input {
 /*---------------------------------Footer-------------------*/
 
 .footer-about {
-  /*height: 392px;*/
   padding-top: 75px;
+  margin: auto;
+  max-width: 820px;
 }
 
 .footer-about__card{
   display:inline-block;
   height: 392px;
   width: 226px;
-  padding: 40px 20px 60px 20px;
+  padding: 40px 20px 40px 20px;
   border-top-style: solid;
   border-top-width: thin;
   border-color: var(--dark-gray);
@@ -637,7 +638,7 @@ input {
 .footer-about li {
   background: #F5F5F5;
   text-align: center;
-  /*padding-bottom: 50px;*/
+  vertical-align: middle;
 }
 
 .footer-subsection{
