@@ -331,7 +331,7 @@ text-align:center;
 }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 3000px) {
 .small-screen {
   display: none;
 }
@@ -448,8 +448,14 @@ svg {
   grid-template-rows: 190px;
 }
 
-/*<<<<<<-----------------Need to fix the media query for hexagons to change to two columns of square images ----------------->>>>*/
+/*<<<<<<-----------------Need to fix the media query for hexagons size to respond when in flex box ----------------->>>>*/
 
+@media screen and (max-width: 995px) {
+  .hexagon img {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+}
 
 @media screen and (max-width: 995px) {
   .workfeatured-hexagon-list {
@@ -457,6 +463,7 @@ svg {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 }
 
