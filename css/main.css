@@ -324,10 +324,26 @@ text-align:center;
   line-height: 22px
 }
 
-@media screen and (max-width: 918px) {
+@media screen and (max-width: 995px) {
   .main__h1 {
   font-size: 60px;
   line-height:70px;
+}
+}
+
+@media screen and (max-width: 1500px) {
+.small-screen {
+  display: none;
+}
+}
+
+
+@media screen and (max-width: 995px) {
+.small-screen{
+  display: block !important;
+}
+.large-screen {
+  display: none;
 }
 }
 
@@ -434,41 +450,13 @@ svg {
 
 /*<<<<<<-----------------Need to fix the media query for hexagons to change to two columns of square images ----------------->>>>*/
 
-/*
-.hex-flex-box {
-  display: flex;
-  max-width: 1000px;
-  margin: auto;
-  padding-top: 70px;
-  text-align: center;
-}
 
-*/
-
-/*
-@media screen and (max-width: 992px) {
-  .hex-flex-box{
-    max-width: 775px;
-  }
-}
-*/
-
-/*@media screen and (max-width: 995px) {
-  .media-query-large {
-    display: none;
-  }
-
-@media screen and (max-width: 995px) {}
-.media-query-small{
-
-}*/
-
-/*
 @media screen and (max-width: 995px) {
   .workfeatured-hexagon-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 }
 
@@ -476,10 +464,10 @@ svg {
   .column {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  column-gap: 20px;
+  column-gap: 100px;
+  flex-basis: 20%;
 }
-}*/
+}
 
 @media screen and (max-width: 995px) {
   .workfeatured-hexagon-list div {
@@ -493,6 +481,14 @@ svg {
 .hexagon-box a{
   border-bottom: none;
   max-width: 995px;
+}
+}
+
+@media screen and (max-width: 995px) {
+.hexagon-box{
+  border-bottom: none;
+  max-width: 995px;
+  padding-bottom: 20px;
 }
 }
 
