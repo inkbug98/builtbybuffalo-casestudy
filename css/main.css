@@ -274,12 +274,6 @@ text {
   line-height: 42px;
 }
 
-@media screen and (max-width: 1050px) {.work-featured__h1 {
-  font-size: 60px;
-  line-height:70px;
-}
-}
-
 h2{
   font-size: 24px;
   word-spacing:1px;
@@ -328,6 +322,13 @@ text-align:center;
   font-weight: 300;
   margin-top: 5px;
   line-height: 22px
+}
+
+@media screen and (max-width: 918px) {
+  .main__h1 {
+  font-size: 60px;
+  line-height:70px;
+}
 }
 
 /*<------------------------Page Breaks------------------------*/
@@ -404,7 +405,6 @@ svg {
 }
 
 .workfeatured-hexagon-list {
-
   width: 1000px;
   display: grid;
   grid-template-columns: 1fr;
@@ -430,15 +430,9 @@ svg {
   display: grid;
   grid-template-columns: repeat(5, 190px);
   grid-template-rows: 190px;
-
 }
 
-/*
-.grid2{
-  display: grid;
-  grid-template-columns: repeat(4, 190px);
-  grid-template-rows: 190px;
-}*/
+/*<<<<<<-----------------Need to fix the media query for hexagons to change to two columns of square images ----------------->>>>*/
 
 /*
 .hex-flex-box {
@@ -449,28 +443,7 @@ svg {
   text-align: center;
 }
 
-.workfeatured-hexagon-list::before {
-  content: "";
-  width: 52px;
-  float: left;
-  height: 100%;
-  shape-outside: repeating-linear-gradient(#0000 0 280px, #000 0 285px);
-}
-
-.workfeatured-hexagon-list{
-  font-size: 0;
-}
 */
-
-/*
-.hexagon {
-  float: left;
-}
-
-.workfeatured-hexagon-list a{
-  border-bottom: none;
-  max-width: 995px;
-}*/
 
 /*
 @media screen and (max-width: 992px) {
@@ -480,34 +453,33 @@ svg {
 }
 */
 
+/*@media screen and (max-width: 995px) {
+  .media-query-large {
+    display: none;
+  }
+
+@media screen and (max-width: 995px) {}
+.media-query-small{
+
+}*/
+
 /*
-
-<<<<<<-----------------Need to fix the media query for hexagons to change to teo columns of square images ----------------->>>>
-
-
-@media screen and (max-width: 804px) {
-  .workfeatured-hexagon-list::before {
-  shape-outside: none;
+@media screen and (max-width: 995px) {
+  .workfeatured-hexagon-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 }
 
 @media screen and (max-width: 995px) {
-  .hex-flex-box {
-  display: grid;
-  grid-template-columns:
-  minmax(244px, 1fr) minmax(244px, 1fr);
-  grid-template-rows:
-  minmax(266px,1fr)
-  minmax(266px,1fr)
-  minmax(266px,1fr)
-  minmax(266px,1fr)
-  minmax(266px,1fr)
-  minmax(266px,1fr)
-  minmax(266px,1fr);
-
-
+  .column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  column-gap: 20px;
 }
-}
+}*/
 
 @media screen and (max-width: 995px) {
   .workfeatured-hexagon-list div {
@@ -515,9 +487,16 @@ svg {
   clip-path: none;
   max-width: 356px;
 }
-}*/
+}
 
-} /*Don't know what this guy corrilates to but things get messed up when I take it out?*/
+@media screen and (max-width: 995px) {
+.hexagon-box a{
+  border-bottom: none;
+  max-width: 995px;
+}
+}
+
+} /*Don't know what this guy corrilates to but things get messed up when I take it out*/
 
 
 /*<----------------------------Images------------------*/
@@ -690,10 +669,6 @@ input {
   text-align: center;
 }
 
-/*.footer-subsection p{
-  max-width:
-}*/
-
 .footer-logos a {
   border-bottom-style: none;
   color: var(--dark-gray);
@@ -704,6 +679,24 @@ input {
 
 .footer-logos a:hover {
   color: var(--black);
+}
+
+@media screen and (max-width: 848px) {
+  .footer-about li  {
+    display: block;
+    float: left;
+    width: 805px;
+}
+}
+
+@media screen and (max-width: 848px) {
+  .footer-about__card{
+  display: block;
+  padding: 40px 20px 40px 20px;
+  border-top-style: solid;
+  border-top-width: thin;
+  border-color: var(--dark-gray);
+}
 }
 
 /*-----------Block Quote Section---------------*/
