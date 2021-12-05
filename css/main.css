@@ -171,6 +171,10 @@ blockquote {
   quotes: none;
 }
 
+.slide-holder div {
+  display: inline-block;
+}
+
 .data-list__paragraph{
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -392,6 +396,24 @@ li {
 
 /*--------------------------Hexagons------------------------*/
 
+.workfeatured-hexagon-list {
+  display: grid;
+  grid-template-columns: repeat(5, 190px);
+  grid-template-rows: 190px;
+  grid-gap: 0;
+}
+
+
+.workfeatured-hexagon-list div{
+  width: 190px;
+  height: 190px;
+  display: inline-block;
+  clip-path: polygon(6% 25%, 6% 75%, 50% 94%, 92% 75%, 92% 25%, 50% 6%);
+  margin-bottom: -54px;
+}
+
+
+/*
 .hex-flex-box {
   display: flex;
   max-width: 1000px;
@@ -411,15 +433,9 @@ li {
 .workfeatured-hexagon-list{
   font-size: 0;
 }
+*/
 
-.workfeatured-hexagon-list div{
-  width: 190px;
-  height: 190px;
-  display: inline-block;
-  clip-path: polygon(6% 25%, 6% 75%, 50% 94%, 92% 75%, 92% 25%, 50% 6%);
-  margin-bottom: -54px;
-}
-
+/*
 .hexagon {
   float: left;
 }
@@ -427,13 +443,15 @@ li {
 .workfeatured-hexagon-list a{
   border-bottom: none;
   max-width: 995px;
-}
+}*/
 
+/*
 @media screen and (max-width: 992px) {
   .hex-flex-box{
     max-width: 775px;
   }
 }
+*/
 
 /*
 
@@ -627,8 +645,6 @@ input {
 
 .footer-about__card{
   display:inline-block;
-  height: 392px;
-  width: 226px;
   padding: 40px 20px 40px 20px;
   border-top-style: solid;
   border-top-width: thin;
@@ -639,6 +655,8 @@ input {
   background: #F5F5F5;
   text-align: center;
   vertical-align: middle;
+  height: 392px;
+  width: 226px;
 }
 
 .footer-subsection{
