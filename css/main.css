@@ -162,19 +162,6 @@ p{
   text-align: center;
 }
 
-blockquote {
-  font-size: 28px;
-  line-height: 36px;
-  word-spacing: 1px;
-  text-align: center;
-  max-width: 960px;
-  quotes: none;
-}
-
-.slide-holder div {
-  display: inline-block;
-}
-
 .data-list__paragraph{
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -325,27 +312,56 @@ text-align:center;
 }
 
 @media screen and (max-width: 995px) {
-  .main__h1 {
-  font-size: 60px;
-  line-height:70px;
-}
+    .main__h1 {
+    font-size: 60px;
+    line-height:70px;
+  }
+    .small-screen-nav a{
+      border-bottom-style: none;
+  }
+    .small-screen{
+    display: block !important;
+  }
+    .large-screen {
+    display: none !important;
+  }
+
+  .logo a{
+    width: 120px;
+    padding: 0 0 20px 0;
+  }
+
+  .header-bar p {
+    width: 90px;
+    margin: 0;
+  }
+
+  .header-bar {
+    width: 320px;
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: auto;
+  }
+
+  .text-left{
+    text-align: center;
+  }
+
+  .text-right {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 3000px) {
-.small-screen {
-  display: none;
-}
+    .small-screen {
+    display: none;
+  }
+    #small-screen-logo {
+    display: none;
+  }
 }
 
-
-@media screen and (max-width: 995px) {
-.small-screen{
-  display: block !important;
-}
-.large-screen {
-  display: none;
-}
-}
 
 /*<------------------------Page Breaks------------------------*/
 
@@ -611,6 +627,12 @@ input {
   height: 180px;
 }
 
+.logo {
+  height: auto;
+  border-bottom: none;
+  padding: 0;
+}
+
 .icon {
   font-size: 100px;
   color: var(--orange);
@@ -632,16 +654,6 @@ input {
 
 .fa-mailchimp{
   font-size: 35px;
-}
-
-.logo {
-  height: auto;
-  border-bottom: none;
-  padding: none;
-}
-
-.logo a{
-  padding: 0;
 }
 
 /*---------------------------------Footer-------------------*/
@@ -684,11 +696,22 @@ input {
   color: var(--black);
 }
 
+
+@media screen and (max-width: 848px) {
+  .card3 {
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-color: var(--dark-gray);
+  margin-bottom: 35px;
+}
+}
+
 @media screen and (max-width: 848px) {
   .footer-about li  {
     display: block;
     float: left;
-    width: 805px;
+    max-width: 805px;
+    width: 100%;
 }
 }
 
@@ -704,8 +727,24 @@ input {
 
 /*-----------Block Quote Section---------------*/
 
+blockquote {
+  font-size: 28px;
+  line-height: 36px;
+  word-spacing: 1px;
+  text-align: center;
+  100%;
+  max-width: 960px;
+  quotes: none;
+}
+
+.slide-holder div {
+  display: inline-block;
+  width: 100%;
+  max-width: 960px;
+}
+
 .slider-holder {
-  width: 960px;
+  max-width: 960px;
   height: 350px;
   margin-left: auto;
   margin-right: auto;
@@ -714,13 +753,13 @@ input {
 }
 
 .slide-holder {
-  width: 960px;
+  max-width: 960px;
   height: 350px;
   position: relative;
 }
 
 .slide {
-  width: 960px;
+  max-width: 960px;
   height: 360px;
   float: left;
   margin: 0px;

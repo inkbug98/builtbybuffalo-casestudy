@@ -13,10 +13,7 @@
 
   <body>
         <div class="header-bar">
-          <p><a href="#!" class="text-left">Home</a></p>
-          <p><a href="#!" class="text-left">Work</a></p>
-          <p><a href="#!" class="text-left">About</a></p>
-          <p class="logo">
+          <p class="small-screen logo" id="small-screen-logo">
           <a href="#!">
             <img
             srcset="components/img/header/logo-type@2x.png 2x"
@@ -28,9 +25,25 @@
             alt="logo text"/>
           </a>
           </p>
-          <p><a href="#!" class="text-right">Feed</a></p>
-          <p><a href="#!" class="text-right">Jobs</a></p>
-          <p><a href="#!" class="text-right">Contact</a></p>
+
+          <p  class="small-screen-nav"><a href="#!" class="text-left">Home</a></p>
+          <p  class="small-screen-nav"><a href="#!" class="text-left">Work</a></p>
+          <p  class="small-screen-nav"><a href="#!" class="text-left">About</a></p>
+          <p class="large-screen logo">
+          <a href="#!">
+            <img
+            srcset="components/img/header/logo-type@2x.png 2x"
+            src="components/img/header/logo-type@2x.png"
+            alt="logo"/>
+            <img
+            srcset="components/img/header/logo-plain@2x.png 2x"
+            src="components/img/header/logo-plain@2x.png"
+            alt="logo text"/>
+          </a>
+          </p>
+          <p  class="small-screen-nav"><a href="#!" class="text-right">Feed</a></p>
+          <p  class="small-screen-nav"><a href="#!" class="text-right">Jobs</a></p>
+          <p  class="small-screen-nav"><a href="#!" class="text-right">Contact</a></p>
         </div>
 
         <div class="main__h1">
@@ -484,7 +497,7 @@
               <p><a href="#!">hello@builtbybuffalo.com</a></p>
               <p><a href="#!">Follow us on Twitter</a></p>
           </li>
-          <li class="footer-about__card">
+          <li class="footer-about__card card3">
               <!-- Place Holder Icon-->
               <i class="far fa-user-circle icon"></i>
               <h3 class="footer-about__card--title">Newsletter</h3>
@@ -499,7 +512,7 @@
           </li>
         </ul>
         <div class="footer-subsection">
-        <hr class="page-break2">
+        <!--<hr class="page-break2">-->
         <h4> We are proud to be recommended by these fine folks:</h4>
           <div class="footer-logos">
               <a href="#!"><i class="fab fa-shopify"></i> Shopify Partners</a>
