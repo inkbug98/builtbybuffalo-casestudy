@@ -379,6 +379,10 @@ li {
   display: inline-block;
 }
 
+svg {
+  text-align: center;
+}
+
 .data-list li {
   margin-right: 14px;
   margin-left: 14px;
@@ -395,16 +399,26 @@ li {
 }
 
 /*--------------------------Hexagons------------------------*/
-
-.workfeatured-hexagon-list {
-  display: grid;
-  grid-template-columns: repeat(5, 190px);
-  grid-template-rows: 190px;
-  grid-gap: 0;
+.hex-flex-box {
+  padding-top: 70px;
 }
 
+.workfeatured-hexagon-list {
 
-.workfeatured-hexagon-list div{
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 190px 190px 190px;
+  grid-gap: 0;
+  text-align: center;
+}
+
+.hexagon-grid:nth-child(even) {
+  position: relative;
+  left: 100px;
+}
+
+.hexagon-grid div{
   width: 190px;
   height: 190px;
   display: inline-block;
@@ -412,6 +426,19 @@ li {
   margin-bottom: -54px;
 }
 
+.hexagon-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 190px);
+  grid-template-rows: 190px;
+
+}
+
+/*
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(4, 190px);
+  grid-template-rows: 190px;
+}*/
 
 /*
 .hex-flex-box {
