@@ -70,6 +70,7 @@ body{
   color: var(--dark-gray);
   line-height: 1.4em;
   background-color: var(--off-white);
+
   /*text-align: center;*/
 }
 
@@ -437,8 +438,10 @@ svg {
 }
 
 .workfeatured-hexagon-list {
-  width: 1000px;
+  width: 950px;
   display: grid;
+  display: block;
+  margin: auto;
   grid-template-columns: 1fr;
   grid-template-rows: 190px 190px 190px;
   grid-gap: 0;
